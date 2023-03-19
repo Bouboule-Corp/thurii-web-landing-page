@@ -1,0 +1,41 @@
+:root {
+    --font-title: 'RobotoFlex', sans-serif;
+    --primary-default: #2B6F61;
+    --text-default: #011312;
+    --background-default: #FFFCF8;
+
+    /* Font weights */
+    --regular: 400;
+    --semi-bold: 600;
+    --bold: 700;
+    --black: 900;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    color: var(--text-default);
+    background-color: var(--background-default);
+}
+
+@font-face {
+    font-family: 'RobotoFlex';
+    font-style: normal;
+    src: url('/fonts/RobotoFlex/RobotoFlex.ttf');
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    font-style: normal;
+    src: url('/fonts/Urbanist/Urbanist.ttf');
+}
+
+h1 {
+    font-family: var(--font-title);
+    font-size: 2rem;
+    font-weight: var(--black);
+    text-transform: uppercase;
+    letter-spacing: .02rem;
+}
