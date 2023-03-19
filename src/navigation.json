@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Project",
+    "path": "#project"
+  },
+  {
+    "name": "Team",
+    "path": "#team"
+  },
+  {
+    "name": "Contact",
+    "path": "#contact"
+  },
+  {
+    "separator": true
+  },
+  {
+    "name": "Beta",
+    "disabled": true
+  }
+]
