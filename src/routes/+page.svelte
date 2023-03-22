@@ -1,7 +1,7 @@
 <script lang="ts">
-    import Header from '$components/Header.svelte';
+    import Welcome from '$components/sections/Welcome.svelte';
 </script>
 
-<div>
-    <Header />
+<div class="Page">
+    <Welcome />
 </div>
