@@ -20,12 +20,13 @@
 
     #top-leaf {
         top: 0;
-        left: -1rem;
+        object-position: -2rem 0;
     }
 
     #bottom-leaf {
         bottom: -6rem;
-        right: -1rem;
+        right: 0;
+        object-position: 4rem 0;
         width: 35rem;
     }
 

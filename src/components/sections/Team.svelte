@@ -25,7 +25,8 @@
 
     #leaf-fruit {
         top: -10rem;
-        right: -3rem;
+        right: 0;
+        object-position: 4rem 0;
         width: 35rem;
     }
 
@@ -120,7 +121,7 @@
     @media (max-width: 768px) {
         #leaf-fruit {
             top: -6rem;
-            right: -3rem;
+            object-position: 3rem 0;
             width: 18rem;
         }
 
