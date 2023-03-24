@@ -12,17 +12,11 @@
         </div>
         <button>Download now</button>
     </div>
-    <img id="bottom-leaf" class="background_img" src="/img/bottom_leaf.svg" alt="Top Leaf" />
+    <img id="bottom-leaf" class="background_img" src="/img/bottom_leaf.svg" alt="Bottom Leaf" />
 </section>
 
 <style>
     @import "../../styles/globals.css";
-
-    .background_img {
-        position: absolute;
-        width: 30rem;
-        z-index: -1;
-    }
 
     #top-leaf {
         top: 0;
@@ -30,7 +24,7 @@
     }
 
     #bottom-leaf {
-        bottom: 0;
+        bottom: -6rem;
         right: -1rem;
     }
 
@@ -41,7 +35,7 @@
         align-items: center;
         row-gap: 1.6rem;
         width: 100%;
-        height: 80%;
+        height: 90%;
         padding: 0 1rem;
     }
 
@@ -85,6 +79,10 @@
 
         #top-leaf {
             top: 4rem;
+        }
+
+        #bottom-leaf {
+            bottom: 0;
         }
 
         .content {

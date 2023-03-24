@@ -55,3 +55,9 @@ body {
     height: 100vh;
     scroll-snap-align: center;
 }
+
+.background_img {
+    position: absolute;
+    width: 30rem;
+    z-index: -1;
+}
