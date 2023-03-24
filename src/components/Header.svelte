@@ -1,5 +1,21 @@
 <script>
     import navigation from "../navigation.json";
+
+    function handleAnchorClick (event) {
+      event.preventDefault();
+
+      const link = event.currentTarget;
+      const anchorId = new URL(link.href).hash.replace('#', '');
+      const anchor = document.getElementById(anchorId);
+
+      if (!anchor) {
+        return;
+      }
+      anchor.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center',
+      });
+    }
 </script>
 
 <header>
@@ -12,7 +28,11 @@
                 {:else if nav.separator}
                     <span class="separator"></span>
                 {:else}
-                    <li><a href="{nav.path}">{nav.name}</a></li>
+                    <li>
+                        <a href="{nav.path}" on:click={handleAnchorClick}>
+                            {nav.name}
+                        </a>
+                    </li>
                 {/if}
             {/each}
         </ul>
@@ -36,6 +56,11 @@
         font-weight: var(--bold);
         letter-spacing: .02rem;
         color: var(--primary-default);
+
+        /* Disable text selection */
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
 
     /* Navigation */

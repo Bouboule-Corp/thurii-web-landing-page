@@ -2,5 +2,36 @@
   "project": {
     "title": "Project",
     "description": "Thurii is your go to partner to experience your passion. Surpass yourself by quickly organizing your next adventure and share it with your friends.<br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis ante tincidunt fermentum malesuada. Vivamus tincidunt at orci vel malesuada. Donec vel nulla risus. Aliquam lectus erat, placerat sed orci vel, fringilla consectetur est. Etiam nec scelerisque lectus. Nunc nec commodo justo, dictum scelerisque massa. Integer eu mauris interdum, efficitur mi at, fringilla est. Nullam gravida, turpis vehicula interdum ultrices, felis risus vehicula tellus, quis rhoncus ligula augue in nibh. Nam sodales et odio quis interdum. Etiam a lacinia sapien. Aenean cursus vitae turpis tempus feugiat. Ut non rhoncus tellus. Mauris porta dictum massa non aliquet. Nunc vulputate iaculis velit quis malesuada.<br/><br/>Praesent id risus est. Maecenas aliquam sed ante sit amet ultricies."
+  },
+  "team": {
+    "title": "Team",
+    "members": [
+      {
+        "name": "Arthur BOUCARD",
+        "role": "Founder & Backend Developer"
+      },
+      {
+        "name": "Lucas ARROYO",
+        "role": "Founder & Android Developer"
+      },
+      {
+        "name": "Thibault BORDENAVE",
+        "role": "Android Developer",
+        "img": "thibault_bordenave.jpg"
+      },
+      {
+        "name": "José RODRIGUEZ",
+        "role": "Backend Developer"
+      },
+      {
+        "name": "Alexandre LACOSTE",
+        "role": "iOS Developer"
+      },
+      {
+        "name": "Lucas LAMOTHE",
+        "role": "iOs Developer",
+        "img": "lucas_lamothe.jpg"
+      }
+    ]
   }
 }

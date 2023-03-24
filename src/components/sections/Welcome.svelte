@@ -2,7 +2,7 @@
   import Header from '$components/Header.svelte';
 </script>
 
-<section>
+<section id="welcome">
     <Header />
     <img id="top-leaf" class="background_img" src="/img/top_leaf.svg" alt="Top Leaf" />
     <div class="content">
@@ -26,6 +26,7 @@
     #bottom-leaf {
         bottom: -6rem;
         right: -1rem;
+        width: 35rem;
     }
 
     .content {
@@ -67,6 +68,11 @@
         color: #FFF;
         border: none;
         border-radius: 2rem;
+
+        /* Disable text selection */
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
     .content button:hover {
         opacity: .8;
@@ -83,6 +89,7 @@
 
         #bottom-leaf {
             bottom: 0;
+            width: 20rem;
         }
 
         .content {

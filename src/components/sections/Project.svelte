@@ -2,7 +2,7 @@
   import sections from "../../sections.json";
 </script>
 
-<section>
+<section id="project">
     <div class="content">
         <img src="/img/mountains.svg" alt="Mountains">
         <div class="text">
@@ -26,11 +26,11 @@
 
     .content img {
         width: 100%;
-        max-width: 35rem;
+        max-width: 38vw;
     }
 
     .content .text {
-        width: 35vw;
+        width: 28vw;
     }
 
     .content h2 {
@@ -42,9 +42,38 @@
     }
 
     .content p {
-        width: 75%;
         font-family: var(--font-text);
         font-weight: var(--regular);
         font-size: 1rem;
+    }
+
+    @media (max-width: 1024px) {
+        .content {
+            padding: 0 4rem;
+        }
+
+        .content .text {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .content {
+            flex-direction: column;
+            row-gap: 0;
+            padding: 0 2rem;
+        }
+
+        .content img {
+            max-width: 90%;
+        }
+
+        .content .text {
+            height: 50%;
+        }
+
+        .content p {
+            font-size: .8rem;
+        }
     }
 </style>
