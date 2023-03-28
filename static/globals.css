@@ -52,11 +52,19 @@ img {
 body {
     background-color: var(--background-default);
 }
+body.mobile {
+    height: 100%;
+    overflow: hidden;
+}
 
 .Page {
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
+}
+
+body.mobile .Page {
+    overflow-y: hidden;
 }
 
 .Page section {

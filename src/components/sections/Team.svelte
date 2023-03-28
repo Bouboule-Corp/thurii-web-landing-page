@@ -21,8 +21,6 @@
 </section>
 
 <style>
-    @import "../../styles/globals.css";
-
     #leaf-fruit {
         top: -10rem;
         right: 0;

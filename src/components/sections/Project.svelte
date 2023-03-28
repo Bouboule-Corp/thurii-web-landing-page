@@ -13,8 +13,6 @@
 </section>
 
 <style>
-    @import "../../styles/globals.css";
-
     .content {
         height: 100%;
         display: flex;

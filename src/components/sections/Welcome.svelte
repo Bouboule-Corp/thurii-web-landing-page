@@ -16,8 +16,6 @@
 </section>
 
 <style>
-    @import "../../styles/globals.css";
-
     #top-leaf {
         top: 0;
         object-position: -2rem 0;

@@ -36,8 +36,6 @@
 </section>
 
 <style>
-    @import "../../styles/globals.css";
-
     #leaf {
         top: 4rem;
         object-position: -2rem 0;
@@ -104,6 +102,11 @@
         box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
     }
 
+    form textarea {
+        max-height: 25vh;
+        resize: vertical;
+    }
+
     form button {
         width: 18rem;
         padding: .8rem 2rem;
@@ -149,6 +152,10 @@
         form .col {
             flex-direction: column;
             row-gap: 1.4rem;
+        }
+
+        form textarea {
+            max-height: 15vh;
         }
 
         form button {

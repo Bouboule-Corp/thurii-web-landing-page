@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import navigation from "../navigation.json";
 
     function handleAnchorClick (event) {
@@ -15,12 +15,26 @@
         behavior: 'smooth',
         block: 'center',
       });
+      handleMobileNav(false);
+    }
+
+    let mobileNav = false;
+
+    function handleMobileNav(status: boolean = false) {
+      mobileNav = status;
+      document.body.className = status ? 'mobile' : '';
     }
 </script>
 
 <header>
     <span class="title">thurii</span>
-    <nav>
+    <div class="menu-toggle {mobileNav ? 'open' : ''}" on:click={() => handleMobileNav(!mobileNav)}>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav class="{mobileNav ? 'mobile' : ''}">
+        <span class="title">thurii</span>
         <ul>
             {#each navigation as nav}
                 {#if nav.disabled}
@@ -40,8 +54,6 @@
 </header>
 
 <style>
-    @import "../styles/globals.css";
-
     header {
         display: flex;
         align-items: center;
@@ -63,7 +75,33 @@
         user-select: none;
     }
 
+    .menu-toggle {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: .15rem;
+        width: 1.5rem;
+        cursor: pointer;
+    }
+
+    .menu-toggle span {
+        width: 100%;
+        height: .2rem;
+        background-color: var(--primary-default);
+        transition: 200ms ease-in-out;
+    }
+    .menu-toggle span:nth-child(1) {
+        transform: translateY(-.2rem);
+    }
+    .menu-toggle span:nth-child(3) {
+        transform: translateY(.2rem);
+    }
+
     /* Navigation */
+    nav .title {
+        display: none;
+    }
+
     nav ul {
         display: flex;
         align-items: center;
@@ -119,5 +157,66 @@
     }
     nav li.disabled::before {
         display: none;
+    }
+
+    @media (max-width: 768px) {
+        header {
+            padding: .4rem 1rem;
+        }
+
+        .menu-toggle {
+            display: flex;
+        }
+
+        .menu-toggle.open {
+            row-gap: 0;
+        }
+
+        .menu-toggle.open span:nth-child(1) {
+            transform: translateY(.2rem) rotate(45deg);
+        }
+
+        .menu-toggle.open span:nth-child(2) {
+            display: none;
+        }
+
+        .menu-toggle.open span:nth-child(3) {
+            transform: translateY(0) rotate(-45deg);
+        }
+
+        nav {
+            display: none;
+        }
+
+        nav.mobile {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 80%;
+            height: 100%;
+            background-color: var(--background-default);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+            transition: 200ms ease-in-out;
+        }
+
+        nav.mobile .title {
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0rem;
+        }
+
+        nav.mobile ul {
+            flex-direction: column;
+            row-gap: 2rem;
+            padding: 2rem 0rem;
+        }
+
+        nav.mobile .separator {
+            height: .08rem;
+            width: 10%;
+            background-color: var(--text-default);
+            opacity: .5;
+        }
     }
 </style>
