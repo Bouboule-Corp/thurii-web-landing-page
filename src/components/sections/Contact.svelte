@@ -28,7 +28,7 @@
                     Your message
                     <span class="required">*</span>
                 </label>
-                <textarea name="message" rows="4" id="message" placeholder="Let tell us know the reason of this contact request" required></textarea>
+                <textarea name="message" rows="4" id="message" placeholder="Please let us know the reason for your contact request." required></textarea>
             </div>
             <button type="submit">Submit</button>
         </form>
