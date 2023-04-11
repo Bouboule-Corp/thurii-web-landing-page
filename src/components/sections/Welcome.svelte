@@ -83,7 +83,7 @@
         }
 
         #top-leaf {
-            top: 4rem;
+            top: 1rem;
         }
 
         #bottom-leaf {
@@ -98,7 +98,7 @@
 
         .content h2 {
             width: 100%;
-            font-size: 1.6rem;
+            font-size: 1.4rem;
         }
 
         .content p {

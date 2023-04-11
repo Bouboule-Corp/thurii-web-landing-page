@@ -137,8 +137,9 @@
 
     @media (max-width: 768px) {
         #leaf {
-            top: -5rem;
-            width: 18rem;
+            display: none;
+            /*top: -5rem;*/
+            /*width: 18rem;*/
         }
 
         .content {
