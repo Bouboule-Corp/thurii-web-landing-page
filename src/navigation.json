@@ -1,10 +1,10 @@
 [
   {
-    "name": "Project",
+    "name": "Projet",
     "path": "#project"
   },
   {
-    "name": "Team",
+    "name": "Équipe",
     "path": "#team"
   },
   {
@@ -15,7 +15,7 @@
     "separator": true
   },
   {
-    "name": "Beta",
+    "name": "Bêta",
     "disabled": true
   }
 ]

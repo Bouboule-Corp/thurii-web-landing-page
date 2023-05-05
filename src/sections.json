@@ -1,36 +1,39 @@
 {
   "project": {
-    "title": "Project",
-    "description": "Plan your next adventure quickly and easily, and share it with your friends with Thurii. Our platform is designed to make organizing your outdoor activities as simple as possible. Whether you're an experienced hiker or just starting out, our intuitive interface and expert guidance will help you get the most out of your hiking experience. With our interactive map and constantly growing database, you'll always have up-to-date information at your fingertips.<br /><br />Join our community of outdoor enthusiasts today and discover a whole new world of hiking possibilities with Thurii."
+    "title": "Projet",
+    "description": "Planifiez votre prochaine aventure rapidement et facilement, et partagez-la avec vos amis avec Thurii. Notre plateforme est conçue pour rendre l'organisation de vos activités de plein air aussi simple que possible. Que vous soyez un randonneur expérimenté ou débutant, notre interface intuitive et nos conseils d'experts vous aideront à tirer le meilleur parti de votre expérience de randonnée. Avec notre carte interactive et notre base de données en croissance constante, vous aurez toujours des informations à jour à portée de main.<br /><br />Rejoignez notre communauté d'amateurs de plein air dès aujourd'hui et découvrez un tout nouveau monde de possibilités de randonnée avec Thurii."
   },
   "team": {
     "title": "Team",
     "members": [
       {
         "name": "Arthur BOUCARD",
-        "role": "Founder & Backend Developer"
+        "role": "Fondateur & Développeur Backend",
+        "img": "arthur_boucard.png"
       },
       {
         "name": "Lucas ARROYO",
-        "role": "Founder & Android Developer",
+        "role": "Fondateur & Développeur Android",
         "img": "lucas_arroyo.jpg"
       },
       {
         "name": "Thibault BORDENAVE",
-        "role": "Founder & Android Developer",
+        "role": "Fondateur & Développeur Android",
         "img": "thibault_bordenave.jpg"
       },
       {
         "name": "José RODRIGUES",
-        "role": "Backend Developer"
+        "role": "Développeur Backend",
+        "img": "jose_rodrigues.jpg"
       },
       {
         "name": "Alexandre LACOSTE",
-        "role": "iOS Developer"
+        "role": "Développeur iOS",
+        "img": "alexandre_lacoste.jpg"
       },
       {
         "name": "Lucas LAMOTHE",
-        "role": "iOs Developer",
+        "role": "Développeur iOS",
         "img": "lucas_lamothe.jpg"
       }
     ]

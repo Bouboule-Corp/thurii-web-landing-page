@@ -7,10 +7,10 @@
     <img id="top-leaf" class="background_img" src="/img/top_leaf.svg" alt="Top Leaf" />
     <div class="content">
         <div>
-            <h2>We’re here to bring the best OF YOU during your outdoor sessions.</h2>
-            <p>Beta version coming soon, stay tuned!</p>
+            <h2>Nous sommes là pour apporter le meilleur de VOUS lors de vos sessions d'extérieures.</h2>
+            <p>La version bêta arrive bientôt, restez à l'écoute !</p>
         </div>
-        <button>Download now</button>
+        <button>Télécharger maintenant</button>
     </div>
     <img id="bottom-leaf" class="background_img" src="/img/bottom_leaf.svg" alt="Bottom Leaf" />
 </section>
