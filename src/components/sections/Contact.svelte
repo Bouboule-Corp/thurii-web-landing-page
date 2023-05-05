@@ -1,38 +1,64 @@
 <script lang="ts">
   import sections from "../../sections.json";
+  import toast, { Toaster } from "svelte-french-toast";
+
+  let formElement;
+
+  const onSubmit = (e: SubmitEvent) => {
+    const formData = new FormData(e.target);
+    const plainFormData = Object.fromEntries(formData.entries());
+	  const bodyJsonData = JSON.stringify(plainFormData);
+
+    fetch("http://dev.api.thurii.fr/api/contact-forms", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: bodyJsonData
+    })
+    .then(() => {
+      formElement.reset();
+      toast.success("Formulaire de contact soumis avec succés.");
+    })
+    .catch((error) => {
+      console.error(error)
+      toast.error("Erreur rencontrée lors de la soumission du formulaire.")
+    });
+  }
 </script>
 
 <section id="contact">
     <img id="leaf" class="background_img" src="/img/leaf.svg" alt="Leaf" />
     <div class="content">
         <h2>{ sections.contact.title }</h2>
-        <form action="#" method="POST">
+        <form on:submit|preventDefault={onSubmit} bind:this={formElement}>
             <div class="col">
                 <div class="input">
                     <label for="name">
-                        Your name
+                        Votre nom
                         <span class="required">*</span>
                     </label>
                     <input type="text" id="name" name="name" placeholder="John Doe" required />
                 </div>
                 <div class="input">
                     <label for="email">
-                        Your email
+                        Votre email
                         <span class="required">*</span>
                     </label>
-                    <input type="email" id="email" name="email" placeholder="john.doe@example.com" required />
+                    <input type="email" id="email" name="email" placeholder="john.doe@exemple.fr" required />
                 </div>
             </div>
             <div class="input">
                 <label for="message">
-                    Your message
+                    Votre message
                     <span class="required">*</span>
                 </label>
-                <textarea name="message" rows="4" id="message" placeholder="Please let us know the reason for your contact request." required></textarea>
+                <textarea name="message" rows="4" id="message" placeholder="Merci de nous indiquer le motif de votre demande de contact." required></textarea>
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit">Soumettre</button>
         </form>
     </div>
+    <Toaster />
 </section>
 
 <style>
