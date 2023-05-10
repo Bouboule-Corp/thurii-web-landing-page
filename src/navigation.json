@@ -4,6 +4,10 @@
     "path": "#project"
   },
   {
+    "name": "Calendrier",
+    "path": "#timeline"
+  },
+  {
     "name": "Équipe",
     "path": "#team"
   },
