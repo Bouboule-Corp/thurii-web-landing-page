@@ -8,7 +8,7 @@
         <div class="text">
             <h2>{ sections.timeline.title }</h2>
         </div>
-        <img src="/img/timeline.png" alt="Timeline">
+        <img src="/img/timeline.svg" alt="Timeline">
         <ul>
           {#each sections.timeline.milestones as milestone (milestone.date)}
             <li>
