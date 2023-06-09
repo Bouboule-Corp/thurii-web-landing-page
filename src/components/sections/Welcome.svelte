@@ -12,7 +12,7 @@
         </div>
         <button>Télécharger maintenant</button>
     </div>
-    <img id="bottom-leaf" class="background_img" src="/img/bottom_leaf.svg" alt="Bottom Leaf" />
+    <img id="bottom-mockup" class="background_img" src="/img/mockup_map.svg" alt="Mockup iOS Application" />
 </section>
 
 <style>
@@ -21,11 +21,11 @@
         object-position: -2rem 0;
     }
 
-    #bottom-leaf {
-        bottom: -6rem;
+    #bottom-mockup {
+        bottom: 0;
         right: 0;
-        object-position: 4rem 0;
-        width: 35rem;
+        object-position: 0 0;
+        width: 44rem;
     }
 
     .content {
@@ -77,6 +77,12 @@
         opacity: .8;
     }
 
+    @media (max-width: 1024px) {
+        #bottom-mockup {
+            width: 34rem;
+        }
+    }
+
     @media (max-width: 768px) {
         .background_img {
             width: 20rem;
@@ -86,9 +92,9 @@
             top: 1rem;
         }
 
-        #bottom-leaf {
+        #bottom-mockup {
             bottom: 0;
-            width: 20rem;
+            width: 24rem;
         }
 
         .content {
