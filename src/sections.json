@@ -1,4 +1,11 @@
 {
+  "welcome": {
+    "title": "Nous sommes là pour apporter le meilleur de VOUS lors de vos sessions d'extérieures.",
+    "description": "Testez notre application bêta dès maintenant et faites nous vos retours sur votre expérience!",
+    "badges": {
+      "googlePlayLink": "https://play.google.com/store/apps/details?id=com.bouboulecorp.thurii"
+    }
+  },
   "project": {
     "title": "Projet",
     "description": "Planifiez votre prochaine aventure rapidement et facilement, et partagez-la avec vos amis avec Thurii. Notre plateforme est conçue pour rendre l'organisation de vos activités de plein air aussi simple que possible. Que vous soyez un randonneur expérimenté ou débutant, notre interface intuitive et nos conseils d'experts vous aideront à tirer le meilleur parti de votre expérience de randonnée. Avec notre carte interactive et notre base de données en croissance constante, vous aurez toujours des informations à jour à portée de main.<br /><br />Rejoignez notre communauté d'amateurs de plein air dès aujourd'hui et découvrez un tout nouveau monde de possibilités de randonnée avec Thurii."

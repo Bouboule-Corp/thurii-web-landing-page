@@ -1,5 +1,6 @@
 <script lang="ts">
   import Header from '$components/Header.svelte';
+  import sections from "../../sections.json";
 </script>
 
 <section id="welcome">
@@ -7,10 +8,17 @@
     <img id="top-leaf" class="background_img" src="/img/top_leaf.svg" alt="Top Leaf" />
     <div class="content">
         <div>
-            <h2>Nous sommes là pour apporter le meilleur de VOUS lors de vos sessions d'extérieures.</h2>
-            <p>La version bêta arrive bientôt, restez à l'écoute !</p>
+            <h2>{ sections.welcome.title }</h2>
+            <p>{ sections.welcome.description }</p>
         </div>
-        <button>Télécharger maintenant</button>
+        <div class="badges">
+            <div id="google-play">
+                <a href={ sections.welcome.badges.googlePlayLink } target="_blank">
+                    <img src="/img/google-play-badge.png" alt="Google Play Store" />
+                </a>
+                <span>Google Play et le logo Google Play sont des marques de Google LLC.</span>
+            </div>
+        </div>
     </div>
     <img id="bottom-mockup" class="background_img" src="/img/mockup_map.svg" alt="Mockup iOS Application" />
 </section>
@@ -58,23 +66,29 @@
         text-transform: uppercase;
     }
 
-    .content button {
-        padding: .8rem 2rem;
-        font-family: var(--font-text);
-        font-weight: var(--semi-bold);
-        font-size: .9rem;
-        background-color: var(--primary-default);
-        color: #FFF;
-        border: none;
-        border-radius: 2rem;
-
-        /* Disable text selection */
-        -webkit-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
+    .content .badges {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 1rem;
     }
-    .content button:hover {
-        opacity: .8;
+
+    .content #google-play {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: .2rem;
+    }
+    .content #google-play img {
+        width: 10rem;
+    }
+    .content #google-play span {
+        font-family: var(--font-text);
+        font-size: .6rem;
+        font-style: italic;
+        text-align: center;
+        width: 10rem;
     }
 
     @media (max-width: 1024px) {
