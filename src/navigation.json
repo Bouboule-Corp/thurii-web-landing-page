@@ -18,12 +18,5 @@
   {
     "name": "Contact",
     "path": "#contact"
-  },
-  {
-    "separator": true
-  },
-  {
-    "name": "Bêta",
-    "disabled": true
   }
 ]

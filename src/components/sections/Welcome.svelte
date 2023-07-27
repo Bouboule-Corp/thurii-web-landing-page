@@ -9,7 +9,7 @@
     <div class="content">
         <div>
             <h2>{ sections.welcome.title }</h2>
-            <p>{ sections.welcome.description }</p>
+            <p>{@html sections.welcome.description }</p>
         </div>
         <div class="badges">
             <div id="google-play">
@@ -78,17 +78,16 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        row-gap: .2rem;
     }
     .content #google-play img {
-        width: 10rem;
+        width: 8rem;
     }
     .content #google-play span {
         font-family: var(--font-text);
-        font-size: .6rem;
+        font-size: .5rem;
         font-style: italic;
         text-align: center;
-        width: 10rem;
+        width: 8rem;
     }
 
     @media (max-width: 1024px) {

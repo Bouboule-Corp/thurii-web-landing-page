@@ -1,7 +1,7 @@
 {
   "welcome": {
     "title": "Nous sommes là pour apporter le meilleur de VOUS lors de vos sessions d'extérieures.",
-    "description": "Testez notre application bêta dès maintenant et faites nous vos retours sur votre expérience!",
+    "description": "Testez notre application bêta dès maintenant <br /> et faites nous vos retours sur votre expérience!",
     "badges": {
       "googlePlayLink": "https://play.google.com/store/apps/details?id=com.bouboulecorp.thurii"
     }
