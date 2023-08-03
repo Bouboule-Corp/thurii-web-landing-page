@@ -9,7 +9,7 @@
     const plainFormData = Object.fromEntries(formData.entries());
 	  const bodyJsonData = JSON.stringify(plainFormData);
 
-    fetch("http://dev.api.thurii.fr/api/contact-forms", {
+    fetch("https://api.thurii.fr/api/contact-forms", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
