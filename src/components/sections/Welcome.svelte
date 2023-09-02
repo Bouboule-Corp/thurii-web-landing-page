@@ -125,4 +125,27 @@
             font-size: .8rem;
         }
     }
+
+    @media (max-width: 375px) {
+        .background_img {
+            width: 15rem;
+        }
+
+        #bottom-mockup {
+            width: 18rem;
+        }
+
+        .content {
+            padding-top: 1rem;
+            row-gap: .8rem;
+        }
+
+        .content h2 {
+            font-size: 1.2rem;
+        }
+
+        .content p {
+            font-size: .6rem;
+        }
+    }
 </style>
