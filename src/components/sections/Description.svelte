@@ -63,11 +63,11 @@
         }
 
         .content img {
-            max-width: 90%;
+            display: none;
         }
 
         .content .text {
-            height: 50%;
+            height: auto;
         }
 
         .content p {
