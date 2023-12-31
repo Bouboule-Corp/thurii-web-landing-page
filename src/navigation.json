@@ -12,6 +12,10 @@
     "path": "#timeline"
   },
   {
+    "name": "Patchnote",
+    "path": "#patchnote"
+  },
+  {
     "name": "Équipe",
     "path": "#team"
   },
